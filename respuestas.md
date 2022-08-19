@@ -133,12 +133,61 @@ while (respuesta != "4") {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
+
+Es una lista de elementos.
+
+````
+
+const array =[1,'true',true,false]
+````
+
 - ¿Qué es un objeto?
+
+Es una lista de elementos pero cada elemento tiene un nombre clave
+
+````
+
+const obj ={
+   number: "Fulanito",
+   edad: 3,
+}
+````
+
 - ¿Cuándo es mejor usar objetos o arrays?
+
+Array cuando lo que aremos en un elemento es lo mismo que en todos los demas.Mientras que un objeto mientras que los nombres son importantes para un algoritmo
+
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Si. Los arrays pueden guardar objetos. Y los objetos pueden guardar arras entre sus propiedades
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
+const array =["oscar","juan","carlos"]
+function imprimirPrimerElementoArray() {
+    console.log(array[0])
+}
+
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
+const array =["oscar","juan","carlos"]
+function imprimirElementoPorElmento(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i])        
+    }
+} 
+imprimirElementoPorElmento(array)
+
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+const obj ={
+    number: "Fulanito",
+    edad: 3,
+    comidas:["pollo","carne","cerdo"]
+ }
+ function imprimirElementoPorElmentoobj(obj) {
+    const arr = Object.values(obj)
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])        
+    }
+}
