@@ -120,14 +120,14 @@ while(i >= 1){
 ### 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es `2 + 2`. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
 > 💡 Pista: puedes usar la función prompt de JavaScript.
-
+````
 let respuesta 
 
 while (respuesta != "4") {
     let pregunta = prompt("Cuanto es 2 + 2")
     respuesta = pregunta
 }
-
+````
 ## Listas
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
@@ -162,14 +162,14 @@ Array cuando lo que aremos en un elemento es lo mismo que en todos los demas.Mie
 Si. Los arrays pueden guardar objetos. Y los objetos pueden guardar arras entre sus propiedades
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
-
+````
 const array =["oscar","juan","carlos"]
 function imprimirPrimerElementoArray() {
     console.log(array[0])
 }
-
+````
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
-
+````
 const array =["oscar","juan","carlos"]
 function imprimirElementoPorElmento(array) {
     for (let i = 0; i < array.length; i++) {
@@ -177,9 +177,9 @@ function imprimirElementoPorElmento(array) {
     }
 } 
 imprimirElementoPorElmento(array)
-
+````
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
-
+````
 const obj ={
     number: "Fulanito",
     edad: 3,
@@ -191,3 +191,4 @@ const obj ={
         console.log(arr[i])        
     }
 }
+````
